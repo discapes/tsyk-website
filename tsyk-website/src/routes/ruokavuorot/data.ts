@@ -1,0 +1,67 @@
+export const dayToSlotToCourses = [
+	[
+		"GE01.5 TSYRUB9.3 KU01.6 ÄI09.3",
+		"BI01.7 YH01.4 TSYENA10.5 RUB11.5",
+		"TSYKE08.2 TSYKE08.1 ÄI07.2",
+		"ÄI11.5 MAA02.5 MAA04.5 PS02.2",
+		"TSYLI06.1",
+		"TSYMAA14.4 TSYHI07.2 FY03.3",
+	],
+	[
+		"ENA05.4 FY03.2 TSYBI07.2 TSYSAB29",
+		"FI02.4 ÄI11.4 MAA04.4 RUB12.4",
+		"TSYMAB10.1 KU01.5 BI01.6",
+		"TE03 TSYÄI12.5 ÄI06.1 EAB31",
+		"KE01.6 HI02.5 TSYENA10.4 MAA12.2",
+		"RUA05.1 PS05.1 TSYFY09.3 MAA02.4",
+	],
+	[
+		"FY07.4 TSYGE05.2 EAB39 RUA02.2 TSYENA09.6 TSYKU10",
+		"RUB11.6 TE01.3 ÄI07.3 TSYBI07.3",
+		"FI01.4 RUB15.1 MAA04.6 TSYMAA14.5",
+		"ÄI11.6 HI01.4 YH02.5",
+		"TSYMAA15.6 UE01.3 RUB15.7 TSYKE08.3",
+		"TSYLI06.2",
+	],
+	[
+		"GE01.5 TSYRUB9.3 KU01.6 ÄI09.3",
+		"BI01.7 YH01.4 TSYENA10.5 RUB11.5",
+		"TSYMAA14.4 TSYKE08.1 ÄI07.2",
+		"ÄI11.5 MAA02.5 MAA04.5 PS02.2",
+		"TSYLI06.1",
+		"TSYKE08.2 TSYHI07.2 FY03.3",
+	],
+	[
+		"MAA02.3 MAA02.7 BI05.2",
+		"TE01.5 BI02.5 YH03.4",
+		"HI02.4 TSYENA09.5 ENA5.3 SAB32",
+		"ÄI11.3 FY7.3 MAB02",
+		"TSYKE07.3 RUB12.3 ÄI11.7",
+		"KU02.3 MAA04.3 TSYPS06.2 TSYMAA14.3",
+	],
+];
+
+export const slotToLunchTime = [
+	"11.15 - 11.45",
+	"11.45 - 12.15",
+	"12.00 - 12.30",
+	"12.15 - 12.45",
+	"12.30 - 13.00",
+	"12.45 - 13.15",
+];
+export const slotToBreakTime = [
+	"11.45 - 12.00 ",
+	"12.15 - 12.30",
+	"12.30 - 12.45",
+	"11.15 - 11.30",
+	"13.00 - 13.15",
+	"11.15 - 11.30",
+];
+export const slotToLessonTime = [
+	"12.00 - 13.15 ",
+	"11.15 - 11.45, 12.30 - 13.15",
+	"11.15 - 12.00, 12.45 - 13.15 ",
+	"11.30 - 12.15, 12.45 - 13.15",
+	"11.15 - 12.30",
+	"11.30 - 12.45",
+];
