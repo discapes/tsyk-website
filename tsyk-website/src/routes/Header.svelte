@@ -20,10 +20,10 @@
 			name: "Oispa Eliitti",
 			path: "/oispaeliitti",
 		},
-		// {
-		// 	name: "Ruokavuorot",
-		// 	path: "/ruokavuorot",
-		// },
+		{
+			name: "Ruokavuorot",
+			path: "/ruokavuorot",
+		},
 		// {
 		// 	name: "Palauteboksi",
 		// 	path: "/palauteboksi",

@@ -1,11 +1,11 @@
 <script lang="ts">
-	import "./app.less";
+	import "./app.css";
 	import "@fortawesome/fontawesome-free/css/all.min.css";
 	import Header from "./Header.svelte";
 </script>
 
 <svelte:head>
-	<title>TSYKin OPKHn sivusto</title>
+	<title>TSYK fanpage</title>
 	<meta name="description" content="Lukee otsikossa ^^^" />
 </svelte:head>
 
@@ -14,5 +14,5 @@
 	<main class="grow m-5 sm:m-10 sm:mb-5">
 		<slot />
 	</main>
-	<footer class="text-center">© {new Date().getFullYear()} MT & OPKH</footer>
+	<!-- <footer class="text-center">© {new Date().getFullYear()} MT & OPKH</footer> -->
 </div>

@@ -1,6 +1,6 @@
 <div class="flex flex-col items-center">
 	<div class="text-center text-lg bg p-5 max-w-lg rounded">
-		<h3><i>Oispa Eliitti</i> by Miika, Lennu L. & OPKH</h3>
+		<h3><i>Oispa Eliitti</i></h3>
 		<p>
 			Yhdistä samanlaiset kuvat käyttämällä nuolinäppäimiä tai pyyhkäisyä. Yritä selvitä
 			lakittamiseen asti! Jokaisen liikutuksen jälkeen satunnaiseen paikaan ilmestyy uusi kirja.

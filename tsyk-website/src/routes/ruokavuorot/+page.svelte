@@ -11,8 +11,8 @@
 			method: "POST",
 			body: JSON.stringify({
 				clipboard,
-				problem: !schedule || schedule.hasProblem()
-			})
+				problem: !schedule || schedule.hasProblem(),
+			}),
 		});
 	}
 
@@ -61,39 +61,43 @@
 	{#if schedule}
 		<div class="bg overflow-auto py-2">
 			<table class="m-auto">
-				<tr>
-					<th class="font-bold">Päivä</th>
-					<th class="font-bold">Kurssi</th>
-					<th class="font-bold">#</th>
-					<th class="font-bold">Ruokailu</th>
-					<th class="font-bold">Välitunti</th>
-					<th class="font-bold">Oppitunti</th>
-				</tr>
-				{#each weekdays as wd, i}<tr>
-						<td>{wd}</td>
-						{#if schedule.getThirdCourse(i)}
-							<td>{schedule.getThirdCourse(i)}</td>
-							<td>
-								{getSlot(i, schedule.getThirdCourse(i)).num}
-							</td>
-							<td class="whitespace-nowrap">
-								{getSlot(i, schedule.getThirdCourse(i)).lunchTime}
-							</td>
-							<td class="whitespace-nowrap">
-								{getSlot(i, schedule.getThirdCourse(i)).breakTime}
-							</td>
-							<td class="whitespace-nowrap">
-								{getSlot(i, schedule.getThirdCourse(i)).lessonTime}
-							</td>
-						{:else}
-							<td>hyppy</td>
-							<td class="whitespace-nowrap">-</td>
-							<td class="whitespace-nowrap">-</td>
-							<td class="whitespace-nowrap">-</td>
-							<td class="whitespace-nowrap">-</td>
-						{/if}
+				<thead>
+					<tr>
+						<th class="font-bold">Päivä</th>
+						<th class="font-bold">Kurssi</th>
+						<th class="font-bold">#</th>
+						<th class="font-bold">Ruokailu</th>
+						<th class="font-bold">Välitunti</th>
+						<th class="font-bold">Oppitunti</th>
 					</tr>
-				{/each}
+				</thead>
+				<tbody>
+					{#each weekdays as wd, i}<tr>
+							<td>{wd}</td>
+							{#if schedule.getThirdCourse(i)}
+								<td>{schedule.getThirdCourse(i)}</td>
+								<td>
+									{getSlot(i, schedule.getThirdCourse(i)).num}
+								</td>
+								<td class="whitespace-nowrap">
+									{getSlot(i, schedule.getThirdCourse(i)).lunchTime}
+								</td>
+								<td class="whitespace-nowrap">
+									{getSlot(i, schedule.getThirdCourse(i)).breakTime}
+								</td>
+								<td class="whitespace-nowrap">
+									{getSlot(i, schedule.getThirdCourse(i)).lessonTime}
+								</td>
+							{:else}
+								<td>hyppy</td>
+								<td class="whitespace-nowrap">-</td>
+								<td class="whitespace-nowrap">-</td>
+								<td class="whitespace-nowrap">-</td>
+								<td class="whitespace-nowrap">-</td>
+							{/if}
+						</tr>
+					{/each}
+				</tbody>
 			</table>
 			<!-- <pre class="whitespace-pre-wrap">{JSON.stringify(rkv, null, 2)}</pre> -->
 		</div>

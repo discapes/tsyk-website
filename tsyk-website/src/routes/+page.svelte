@@ -58,7 +58,7 @@
 		<img class="inline-block h-[100px]" alt="tsyk logo" src="/favicon.png" />
 		<!-- so flex doesn't wrap too early -->
 		<div class="basis-[230px] grow">
-			<h2>TSYKin opiskelijakunnan sivusto</h2>
+			<h2>TSYK fanpage</h2>
 			<h4 class="mb-0 text-xl">
 				Linkkejä, lounasta ja <i>Oispa Eliitti</i>.
 			</h4>
